@@ -56,11 +56,32 @@
         </a>
 
 
+        <hr style="margin-bottom: 20px;">
+        <a href="cart.html" style="display: block; margin-bottom: 20px;">
+            Корзина
+        </a>
+        <a href="cart2.html" style="display: block; margin-bottom: 20px;">
+            Корзина. Невыбранно
+        </a>
+        <a href="cart-empty.html" style="display: block; margin-bottom: 20px;">
+            Корзина. Пустая
+        </a>
 
-
-        <!--        <button style="border: 2px solid #000;margin-bottom: 20px;" data-bs-toggle="modal" data-bs-target="#quickOrder">-->
-        <!--            Быстрый заказ-->
-        <!--        </button>-->
+        <button data-modal="authModal" style="border: 2px solid #000;margin-bottom: 20px;">
+            Авторизация
+        </button>
+        <button data-modal="authModal2" style="border: 2px solid #000;margin-bottom: 20px;">
+            Авторизация при заказе
+        </button>
+        <button data-modal="authModal3" style="border: 2px solid #000;margin-bottom: 20px;">
+            Авторизация (Ошибка)
+        </button>
+        <button data-modal="authModal4" style="border: 2px solid #000;margin-bottom: 20px;">
+            Авторизация (Новый пользователь)
+        </button>
+        <button data-modal="authModal5" style="border: 2px solid #000;margin-bottom: 20px;">
+            Авторизация (Завершение)
+        </button>
 
 
         <!--        <code>-->
@@ -82,18 +103,502 @@
 
 
 
-    <div class="modal" id="Modal">
-        <div class="modal__bg modal-bg _close-modal"></div>
-        <div class="modal__dialog">
-            <div class="modal__top">
-                <div class="text32 medium-text">
-                    Title
+    <div class="modal modal-full" id="authModal">
+        <div class="modal-header">
+            <div class="container">
+                <div class="modal-header__inner">
+                    <div class="modal-full__logo">
+                        <img src="img/logo2.svg" alt="">
+                    </div>
+
+
+
+                    <div class="modal-header__nav">
+                        <button class="close-btn _close-modal">
+                            <img src="img/close.svg" alt="">
+                        </button>
+                    </div>
                 </div>
-                <button class="close-btn _close-modal">
-                    <img src="img/close.svg" alt="">
-                </button>
             </div>
         </div>
+
+
+        <div class="modal-content">
+            <div class="container">
+                <div class="modal-content__inner">
+                    <form class="auth">
+                        <div class="h2">
+                            Авторизация
+                        </div>
+                        <div class="auth__desc">
+                            <div class="text16 regular-text">
+                                Введите номер телефона и мы отправим код в СМС
+                            </div>
+                        </div>
+                        <div class="fg auth__field ">
+                            <div class="auth__field-code">
+                                <span class="text16">+ 7</span>
+                            </div>
+                            <div class="auth__field-label">
+                                <div class="text12">Номер телефона</div>
+                            </div>
+                            <input type="text" placeholder="000 000 00 00">
+                            <div class="fg__error-text">
+                                Чтобы продолжить, введите 10-значный номер телефона
+                            </div>
+                        </div>
+                        <button disabled class="auth__btn m-btn m-btn-black">
+                            <span>Войти</span>
+                        </button>
+                        <div class="auth__confirm">
+                            <div class="text16">
+                                При нажатии на кнопку вы соглашаетесь с <a href="">политикой конфиденциальности</a>
+                            </div>
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="modal-footer">
+            <div class="container">
+                <div class="modal-footer__inner">
+                    <div class="socials">
+                        <a href="" class="socials__item">
+                            <img src="img/tg.svg" alt="">
+                        </a>
+                        <a href="" class="socials__item">
+                            <img src="img/vk.svg" alt="">
+                        </a>
+                    </div>
+
+                    <a href="" class="modal-footer__call m-btn">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M20.8472 14.8556L16.4306 12.8766L16.4184 12.8709C16.1892 12.7729 15.939 12.7335 15.6907 12.7564C15.4424 12.7793 15.2037 12.8638 14.9963 13.0022C14.9718 13.0183 14.9484 13.0358 14.9259 13.0547L12.6441 15C11.1984 14.2978 9.70595 12.8166 9.00376 11.3897L10.9519 9.07312C10.9706 9.04968 10.9884 9.02624 11.0053 9.00093C11.1407 8.79403 11.2229 8.55686 11.2445 8.31053C11.2661 8.0642 11.2264 7.81636 11.1291 7.58906V7.57781L9.14438 3.15374C9.0157 2.8568 8.79444 2.60944 8.51362 2.44859C8.2328 2.28774 7.9075 2.22202 7.58626 2.26124C6.31592 2.42841 5.14986 3.05228 4.30588 4.01633C3.4619 4.98039 2.99771 6.2187 3.00001 7.49999C3.00001 14.9437 9.05626 21 16.5 21C17.7813 21.0023 19.0196 20.5381 19.9837 19.6941C20.9477 18.8501 21.5716 17.6841 21.7388 16.4137C21.7781 16.0926 21.7125 15.7674 21.5518 15.4866C21.3911 15.2058 21.144 14.9845 20.8472 14.8556ZM16.5 19.5C13.3185 19.4965 10.2682 18.2311 8.01856 15.9814C5.76888 13.7318 4.50348 10.6815 4.50001 7.49999C4.49648 6.58451 4.82631 5.69905 5.42789 5.00897C6.02947 4.31888 6.86167 3.87137 7.76907 3.74999C7.7687 3.75373 7.7687 3.7575 7.76907 3.76124L9.73782 8.16749L7.80001 10.4869C7.78034 10.5095 7.76247 10.5336 7.74657 10.5591C7.60549 10.7755 7.52273 11.0248 7.5063 11.2827C7.48988 11.5406 7.54035 11.7983 7.65282 12.0309C8.5022 13.7681 10.2525 15.5053 12.0084 16.3537C12.2428 16.4652 12.502 16.5139 12.7608 16.4952C13.0196 16.4764 13.2692 16.3909 13.485 16.2469C13.5091 16.2307 13.5322 16.2131 13.5544 16.1944L15.8334 14.25L20.2397 16.2234C20.2397 16.2234 20.2472 16.2234 20.25 16.2234C20.1301 17.1321 19.6833 17.966 18.9931 18.5691C18.3028 19.1721 17.4166 19.5031 16.5 19.5Z" fill="#1A1E1E" />
+                        </svg>
+                        <span>Служба поддержки</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="modal modal-full" id="authModal2">
+        <div class="modal-header">
+            <div class="container">
+                <div class="modal-header__inner">
+                    <div class="modal-full__logo">
+                        <img src="img/logo2.svg" alt="">
+                    </div>
+
+
+                    <div class="order-tabs">
+                        <div class="order-tab _active">
+                            <div class="order-tab__num">
+                                <span class="subtitle">1</span>
+                            </div>
+                            <span class="text16">Авторизация</span>
+                        </div>
+                        <div class="order-tab ">
+                            <div class="order-tab__num">
+                                <span class="subtitle">2</span>
+                            </div>
+                            <span class="text16">Оформление заказа</span>
+                        </div>
+                    </div>
+
+
+                    <div class="modal-header__nav">
+                        <button class="close-btn _close-modal">
+                            <img src="img/close.svg" alt="">
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="modal-content">
+            <div class="container">
+                <div class="modal-content__inner">
+                    <form class="auth">
+                        <div class="h2">
+                            Авторизация
+                        </div>
+                        <div class="auth__desc">
+                            <div class="text16 regular-text">
+                                Введите номер телефона и мы отправим код в СМС
+                            </div>
+                        </div>
+                        <div class="fg auth__field ">
+                            <div class="auth__field-code">
+                                <span class="text16">+ 7</span>
+                            </div>
+                            <div class="auth__field-label">
+                                <div class="text12">Номер телефона</div>
+                            </div>
+                            <input type="text" placeholder="000 000 00 00">
+                            <div class="fg__error-text">
+                                Чтобы продолжить, введите 10-значный номер телефона
+                            </div>
+                        </div>
+                        <button disabled class="auth__btn m-btn m-btn-black">
+                            <span>Войти</span>
+                        </button>
+                        <div class="auth__confirm">
+                            <div class="text16">
+                                При нажатии на кнопку вы соглашаетесь с <a href="">политикой конфиденциальности</a>
+                            </div>
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="modal-footer">
+            <div class="container">
+                <div class="modal-footer__inner">
+                    <div class="socials">
+                        <a href="" class="socials__item">
+                            <img src="img/tg.svg" alt="">
+                        </a>
+                        <a href="" class="socials__item">
+                            <img src="img/vk.svg" alt="">
+                        </a>
+                    </div>
+
+                    <a href="" class="modal-footer__call m-btn">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M20.8472 14.8556L16.4306 12.8766L16.4184 12.8709C16.1892 12.7729 15.939 12.7335 15.6907 12.7564C15.4424 12.7793 15.2037 12.8638 14.9963 13.0022C14.9718 13.0183 14.9484 13.0358 14.9259 13.0547L12.6441 15C11.1984 14.2978 9.70595 12.8166 9.00376 11.3897L10.9519 9.07312C10.9706 9.04968 10.9884 9.02624 11.0053 9.00093C11.1407 8.79403 11.2229 8.55686 11.2445 8.31053C11.2661 8.0642 11.2264 7.81636 11.1291 7.58906V7.57781L9.14438 3.15374C9.0157 2.8568 8.79444 2.60944 8.51362 2.44859C8.2328 2.28774 7.9075 2.22202 7.58626 2.26124C6.31592 2.42841 5.14986 3.05228 4.30588 4.01633C3.4619 4.98039 2.99771 6.2187 3.00001 7.49999C3.00001 14.9437 9.05626 21 16.5 21C17.7813 21.0023 19.0196 20.5381 19.9837 19.6941C20.9477 18.8501 21.5716 17.6841 21.7388 16.4137C21.7781 16.0926 21.7125 15.7674 21.5518 15.4866C21.3911 15.2058 21.144 14.9845 20.8472 14.8556ZM16.5 19.5C13.3185 19.4965 10.2682 18.2311 8.01856 15.9814C5.76888 13.7318 4.50348 10.6815 4.50001 7.49999C4.49648 6.58451 4.82631 5.69905 5.42789 5.00897C6.02947 4.31888 6.86167 3.87137 7.76907 3.74999C7.7687 3.75373 7.7687 3.7575 7.76907 3.76124L9.73782 8.16749L7.80001 10.4869C7.78034 10.5095 7.76247 10.5336 7.74657 10.5591C7.60549 10.7755 7.52273 11.0248 7.5063 11.2827C7.48988 11.5406 7.54035 11.7983 7.65282 12.0309C8.5022 13.7681 10.2525 15.5053 12.0084 16.3537C12.2428 16.4652 12.502 16.5139 12.7608 16.4952C13.0196 16.4764 13.2692 16.3909 13.485 16.2469C13.5091 16.2307 13.5322 16.2131 13.5544 16.1944L15.8334 14.25L20.2397 16.2234C20.2397 16.2234 20.2472 16.2234 20.25 16.2234C20.1301 17.1321 19.6833 17.966 18.9931 18.5691C18.3028 19.1721 17.4166 19.5031 16.5 19.5Z" fill="#1A1E1E" />
+                        </svg>
+                        <span>Служба поддержки</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="modal modal-full" id="authModal3">
+        <div class="modal-header">
+            <div class="container">
+                <div class="modal-header__inner">
+                    <div class="modal-full__logo">
+                        <img src="img/logo2.svg" alt="">
+                    </div>
+
+
+                    <div class="order-tabs">
+                        <div class="order-tab _active">
+                            <div class="order-tab__num">
+                                <span class="subtitle">1</span>
+                            </div>
+                            <span class="text16">Авторизация</span>
+                        </div>
+                        <div class="order-tab ">
+                            <div class="order-tab__num">
+                                <span class="subtitle">2</span>
+                            </div>
+                            <span class="text16">Оформление заказа</span>
+                        </div>
+                    </div>
+
+
+                    <div class="modal-header__nav">
+                        <button class="close-btn _close-modal">
+                            <img src="img/close.svg" alt="">
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="modal-content">
+            <div class="container">
+                <div class="modal-content__inner">
+                    <form class="auth">
+                        <div class="h2">
+                            Авторизация
+                        </div>
+                        <div class="auth__desc">
+                            <div class="text16 regular-text">
+                                Введите номер телефона и мы отправим код в СМС
+                            </div>
+                        </div>
+                        <div class="fg auth__field _error">
+                            <div class="auth__field-code">
+                                <span class="text16">+ 7</span>
+                            </div>
+                            <div class="auth__field-label">
+                                <div class="text12">Номер телефона</div>
+                            </div>
+                            <input type="text" placeholder="000 000 00 00">
+                            <div class="fg__error-text">
+                                Чтобы продолжить, введите 10-значный номер телефона
+                            </div>
+                        </div>
+                        <button disabled class="auth__btn m-btn m-btn-black">
+                            <span>Войти</span>
+                        </button>
+                        <div class="auth__confirm">
+                            <div class="text16">
+                                При нажатии на кнопку вы соглашаетесь с <a href="">политикой конфиденциальности</a>
+                            </div>
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="modal-footer">
+            <div class="container">
+                <div class="modal-footer__inner">
+                    <div class="socials">
+                        <a href="" class="socials__item">
+                            <img src="img/tg.svg" alt="">
+                        </a>
+                        <a href="" class="socials__item">
+                            <img src="img/vk.svg" alt="">
+                        </a>
+                    </div>
+
+                    <a href="" class="modal-footer__call m-btn">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M20.8472 14.8556L16.4306 12.8766L16.4184 12.8709C16.1892 12.7729 15.939 12.7335 15.6907 12.7564C15.4424 12.7793 15.2037 12.8638 14.9963 13.0022C14.9718 13.0183 14.9484 13.0358 14.9259 13.0547L12.6441 15C11.1984 14.2978 9.70595 12.8166 9.00376 11.3897L10.9519 9.07312C10.9706 9.04968 10.9884 9.02624 11.0053 9.00093C11.1407 8.79403 11.2229 8.55686 11.2445 8.31053C11.2661 8.0642 11.2264 7.81636 11.1291 7.58906V7.57781L9.14438 3.15374C9.0157 2.8568 8.79444 2.60944 8.51362 2.44859C8.2328 2.28774 7.9075 2.22202 7.58626 2.26124C6.31592 2.42841 5.14986 3.05228 4.30588 4.01633C3.4619 4.98039 2.99771 6.2187 3.00001 7.49999C3.00001 14.9437 9.05626 21 16.5 21C17.7813 21.0023 19.0196 20.5381 19.9837 19.6941C20.9477 18.8501 21.5716 17.6841 21.7388 16.4137C21.7781 16.0926 21.7125 15.7674 21.5518 15.4866C21.3911 15.2058 21.144 14.9845 20.8472 14.8556ZM16.5 19.5C13.3185 19.4965 10.2682 18.2311 8.01856 15.9814C5.76888 13.7318 4.50348 10.6815 4.50001 7.49999C4.49648 6.58451 4.82631 5.69905 5.42789 5.00897C6.02947 4.31888 6.86167 3.87137 7.76907 3.74999C7.7687 3.75373 7.7687 3.7575 7.76907 3.76124L9.73782 8.16749L7.80001 10.4869C7.78034 10.5095 7.76247 10.5336 7.74657 10.5591C7.60549 10.7755 7.52273 11.0248 7.5063 11.2827C7.48988 11.5406 7.54035 11.7983 7.65282 12.0309C8.5022 13.7681 10.2525 15.5053 12.0084 16.3537C12.2428 16.4652 12.502 16.5139 12.7608 16.4952C13.0196 16.4764 13.2692 16.3909 13.485 16.2469C13.5091 16.2307 13.5322 16.2131 13.5544 16.1944L15.8334 14.25L20.2397 16.2234C20.2397 16.2234 20.2472 16.2234 20.25 16.2234C20.1301 17.1321 19.6833 17.966 18.9931 18.5691C18.3028 19.1721 17.4166 19.5031 16.5 19.5Z" fill="#1A1E1E" />
+                        </svg>
+                        <span>Служба поддержки</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="modal modal-full" id="authModal4">
+        <div class="modal-header">
+            <div class="container">
+                <div class="modal-header__inner">
+                    <div class="modal-full__logo">
+                        <img src="img/logo2.svg" alt="">
+                    </div>
+
+
+                    <div class="order-tabs">
+                        <div class="order-tab _active">
+                            <div class="order-tab__num">
+                                <span class="subtitle">1</span>
+                            </div>
+                            <span class="text16">Авторизация</span>
+                        </div>
+                        <div class="order-tab ">
+                            <div class="order-tab__num">
+                                <span class="subtitle">2</span>
+                            </div>
+                            <span class="text16">Оформление заказа</span>
+                        </div>
+                    </div>
+
+
+                    <div class="modal-header__nav">
+                        <button class="close-btn _close-modal">
+                            <img src="img/close.svg" alt="">
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="modal-content">
+            <div class="container">
+                <div class="modal-content__inner">
+                    <form class="auth">
+                        <div class="h2">
+                            Введите код из СМС
+                        </div>
+                        <div class="auth__hint text16">
+                            Мы отправили код на ваш номер телефона  <span class="auth__hint-phone">+7 (916) 222-22-22</span>
+                            <button type="button" class="auth__hint-btn">
+                                Изменить
+                            </button>
+                        </div>
+                        <div class="user-role">
+                            <div class="user-role__top">
+                                <div class="subtitle">
+                                    Выберите вашу роль
+                                </div>
+                                <div class="text14">
+                                    От этого зависит ваши возможности на сайте
+                                </div>
+                            </div>
+                            <div class="user-role__items">
+                                <div class="role-item">
+                                    <div class="m-radio">
+                                        <input type="radio" checked name="role">
+                                        <label></label>
+                                    </div>
+                                    <div class="role-item__content">
+                                        <div class="text14 bold-text">Производитель</div>
+                                        <div class="text12 text-gray5">
+                                            У вас есть производство и вы хотите продавать свои товары и покупать товары других производителей и дилеров
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="role-item">
+                                    <div class="m-radio">
+                                        <input type="radio" name="role">
+                                        <label></label>
+                                    </div>
+                                    <div class="role-item__content">
+                                        <div class="text14 bold-text">
+                                            Агент
+                                        </div>
+                                        <div class="text12 text-gray5">
+                                            Вы хотите покупать товары производителей. Также вы хотите иметь возможность размещать свой ассортимент
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="role-item">
+                                    <div class="m-radio">
+                                        <input type="radio" name="role">
+                                        <label></label>
+                                    </div>
+                                    <div class="role-item__content">
+                                        <div class="text14 bold-text">
+                                            Физлицо
+                                        </div>
+                                        <div class="text12 text-gray5">
+                                            Вы ничего не продаете и хотите покупать товары как физлицо
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="auth__code">
+                            <div class="fg">
+                                <input type="number">
+                            </div>
+                            <div class="auth__code-hint text12 text-gray5">
+                                Выслать код повторно через 0:59
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal-footer">
+            <div class="container">
+                <div class="modal-footer__inner">
+                    <div class="socials">
+                        <a href="" class="socials__item">
+                            <img src="img/tg.svg" alt="">
+                        </a>
+                        <a href="" class="socials__item">
+                            <img src="img/vk.svg" alt="">
+                        </a>
+                    </div>
+
+                    <a href="" class="modal-footer__call m-btn">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M20.8472 14.8556L16.4306 12.8766L16.4184 12.8709C16.1892 12.7729 15.939 12.7335 15.6907 12.7564C15.4424 12.7793 15.2037 12.8638 14.9963 13.0022C14.9718 13.0183 14.9484 13.0358 14.9259 13.0547L12.6441 15C11.1984 14.2978 9.70595 12.8166 9.00376 11.3897L10.9519 9.07312C10.9706 9.04968 10.9884 9.02624 11.0053 9.00093C11.1407 8.79403 11.2229 8.55686 11.2445 8.31053C11.2661 8.0642 11.2264 7.81636 11.1291 7.58906V7.57781L9.14438 3.15374C9.0157 2.8568 8.79444 2.60944 8.51362 2.44859C8.2328 2.28774 7.9075 2.22202 7.58626 2.26124C6.31592 2.42841 5.14986 3.05228 4.30588 4.01633C3.4619 4.98039 2.99771 6.2187 3.00001 7.49999C3.00001 14.9437 9.05626 21 16.5 21C17.7813 21.0023 19.0196 20.5381 19.9837 19.6941C20.9477 18.8501 21.5716 17.6841 21.7388 16.4137C21.7781 16.0926 21.7125 15.7674 21.5518 15.4866C21.3911 15.2058 21.144 14.9845 20.8472 14.8556ZM16.5 19.5C13.3185 19.4965 10.2682 18.2311 8.01856 15.9814C5.76888 13.7318 4.50348 10.6815 4.50001 7.49999C4.49648 6.58451 4.82631 5.69905 5.42789 5.00897C6.02947 4.31888 6.86167 3.87137 7.76907 3.74999C7.7687 3.75373 7.7687 3.7575 7.76907 3.76124L9.73782 8.16749L7.80001 10.4869C7.78034 10.5095 7.76247 10.5336 7.74657 10.5591C7.60549 10.7755 7.52273 11.0248 7.5063 11.2827C7.48988 11.5406 7.54035 11.7983 7.65282 12.0309C8.5022 13.7681 10.2525 15.5053 12.0084 16.3537C12.2428 16.4652 12.502 16.5139 12.7608 16.4952C13.0196 16.4764 13.2692 16.3909 13.485 16.2469C13.5091 16.2307 13.5322 16.2131 13.5544 16.1944L15.8334 14.25L20.2397 16.2234C20.2397 16.2234 20.2472 16.2234 20.25 16.2234C20.1301 17.1321 19.6833 17.966 18.9931 18.5691C18.3028 19.1721 17.4166 19.5031 16.5 19.5Z" fill="#1A1E1E" />
+                        </svg>
+                        <span>Служба поддержки</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="modal modal-full" id="authModal5">
+        <div class="modal-header">
+            <div class="container">
+                <div class="modal-header__inner">
+                    <div class="modal-full__logo">
+                        <img src="img/logo2.svg" alt="">
+                    </div>
+
+
+                    <div class="order-tabs">
+                        <div class="order-tab _active">
+                            <div class="order-tab__num">
+                                <span class="subtitle">1</span>
+                            </div>
+                            <span class="text16">Авторизация</span>
+                        </div>
+                        <div class="order-tab ">
+                            <div class="order-tab__num">
+                                <span class="subtitle">2</span>
+                            </div>
+                            <span class="text16">Оформление заказа</span>
+                        </div>
+                    </div>
+
+
+                    <div class="modal-header__nav">
+                        <button class="close-btn _close-modal">
+                            <img src="img/close.svg" alt="">
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="modal-content">
+            <div class="container">
+                <div class="modal-content__inner">
+                    <form class="auth">
+                        <div class="h2">
+                            Введите код из СМС
+                        </div>
+                        <div class="auth__hint text16">
+                            Мы отправили код на ваш номер телефона  <span class="auth__hint-phone">+7 (916) 222-22-22</span>
+                            <button type="button" class="auth__hint-btn">
+                                Изменить
+                            </button>
+                        </div>
+                        <div class="auth__code">
+                            <div class="fg">
+                                <input type="number">
+                            </div>
+                            <div class="auth__code-hint text12 text-gray5">
+                                Выслать код повторно через 0:59
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal-footer">
+            <div class="container">
+                <div class="modal-footer__inner">
+                    <div class="socials">
+                        <a href="" class="socials__item">
+                            <img src="img/tg.svg" alt="">
+                        </a>
+                        <a href="" class="socials__item">
+                            <img src="img/vk.svg" alt="">
+                        </a>
+                    </div>
+
+                    <a href="" class="modal-footer__call m-btn">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M20.8472 14.8556L16.4306 12.8766L16.4184 12.8709C16.1892 12.7729 15.939 12.7335 15.6907 12.7564C15.4424 12.7793 15.2037 12.8638 14.9963 13.0022C14.9718 13.0183 14.9484 13.0358 14.9259 13.0547L12.6441 15C11.1984 14.2978 9.70595 12.8166 9.00376 11.3897L10.9519 9.07312C10.9706 9.04968 10.9884 9.02624 11.0053 9.00093C11.1407 8.79403 11.2229 8.55686 11.2445 8.31053C11.2661 8.0642 11.2264 7.81636 11.1291 7.58906V7.57781L9.14438 3.15374C9.0157 2.8568 8.79444 2.60944 8.51362 2.44859C8.2328 2.28774 7.9075 2.22202 7.58626 2.26124C6.31592 2.42841 5.14986 3.05228 4.30588 4.01633C3.4619 4.98039 2.99771 6.2187 3.00001 7.49999C3.00001 14.9437 9.05626 21 16.5 21C17.7813 21.0023 19.0196 20.5381 19.9837 19.6941C20.9477 18.8501 21.5716 17.6841 21.7388 16.4137C21.7781 16.0926 21.7125 15.7674 21.5518 15.4866C21.3911 15.2058 21.144 14.9845 20.8472 14.8556ZM16.5 19.5C13.3185 19.4965 10.2682 18.2311 8.01856 15.9814C5.76888 13.7318 4.50348 10.6815 4.50001 7.49999C4.49648 6.58451 4.82631 5.69905 5.42789 5.00897C6.02947 4.31888 6.86167 3.87137 7.76907 3.74999C7.7687 3.75373 7.7687 3.7575 7.76907 3.76124L9.73782 8.16749L7.80001 10.4869C7.78034 10.5095 7.76247 10.5336 7.74657 10.5591C7.60549 10.7755 7.52273 11.0248 7.5063 11.2827C7.48988 11.5406 7.54035 11.7983 7.65282 12.0309C8.5022 13.7681 10.2525 15.5053 12.0084 16.3537C12.2428 16.4652 12.502 16.5139 12.7608 16.4952C13.0196 16.4764 13.2692 16.3909 13.485 16.2469C13.5091 16.2307 13.5322 16.2131 13.5544 16.1944L15.8334 14.25L20.2397 16.2234C20.2397 16.2234 20.2472 16.2234 20.25 16.2234C20.1301 17.1321 19.6833 17.966 18.9931 18.5691C18.3028 19.1721 17.4166 19.5031 16.5 19.5Z" fill="#1A1E1E" />
+                        </svg>
+                        <span>Служба поддержки</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
     </div>
 
     <!--  -->

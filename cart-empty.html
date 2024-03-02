@@ -9,13 +9,13 @@
     <link rel="stylesheet" href="css/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/nouislider.min.css">
     <link rel="stylesheet" href="css/style.min.css">
-    <title>Избранное</title>
+    <title>Корзина</title>
 </head>
 
 
 <body class="m-page">
     <div class="wrapper">
-        <header class="header">
+        <header class="header header--catalog-item">
             <div class="container">
                 <div class="header-top">
                     <div class="header-city">
@@ -745,403 +745,415 @@
         </header>
         <main class="content">
 
-            <div class="favourite">
+            <div class="cart">
                 <div class="container">
-                    <div class="shops__grid grid4">
-                        <div class="shops__col">
-                            <div class="favourite-filter">
-                                <div class="shops-categories__items">
-                                    <a href="" class="shops-categories__item ">
-                                        <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M20.25 3.7677H3.75C3.35218 3.7677 2.97064 3.92574 2.68934 4.20704C2.40804 4.48834 2.25 4.86988 2.25 5.2677V18.7677C2.25 19.1655 2.40804 19.5471 2.68934 19.8284C2.97064 20.1097 3.35218 20.2677 3.75 20.2677H20.25C20.6478 20.2677 21.0294 20.1097 21.3107 19.8284C21.592 19.5471 21.75 19.1655 21.75 18.7677V5.2677C21.75 4.86988 21.592 4.48834 21.3107 4.20704C21.0294 3.92574 20.6478 3.7677 20.25 3.7677ZM20.25 5.2677V6.7677H3.75V5.2677H20.25ZM20.25 18.7677H3.75V8.2677H20.25V18.7677ZM16.5 10.5177C16.5 11.7112 16.0259 12.8558 15.182 13.6997C14.3381 14.5436 13.1935 15.0177 12 15.0177C10.8065 15.0177 9.66193 14.5436 8.81802 13.6997C7.97411 12.8558 7.5 11.7112 7.5 10.5177C7.5 10.3188 7.57902 10.128 7.71967 9.98737C7.86032 9.84672 8.05109 9.7677 8.25 9.7677C8.44891 9.7677 8.63968 9.84672 8.78033 9.98737C8.92098 10.128 9 10.3188 9 10.5177C9 11.3133 9.31607 12.0764 9.87868 12.639C10.4413 13.2016 11.2044 13.5177 12 13.5177C12.7956 13.5177 13.5587 13.2016 14.1213 12.639C14.6839 12.0764 15 11.3133 15 10.5177C15 10.3188 15.079 10.128 15.2197 9.98737C15.3603 9.84672 15.5511 9.7677 15.75 9.7677C15.9489 9.7677 16.1397 9.84672 16.2803 9.98737C16.421 10.128 16.5 10.3188 16.5 10.5177Z" fill="#1A1E1E" />
-                                        </svg>
-                                        <span>Товары</span>
-                                    </a>
-                                    <a href="" class="shops-categories__item _active">
-                                        <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M21.75 9.38135C21.7504 9.31162 21.7409 9.24218 21.7219 9.1751L20.3766 4.46885C20.2861 4.15658 20.0971 3.88194 19.8378 3.68594C19.5784 3.48993 19.2626 3.38308 18.9375 3.38135H5.0625C4.73741 3.38308 4.4216 3.48993 4.16223 3.68594C3.90287 3.88194 3.71386 4.15658 3.62344 4.46885L2.27906 9.1751C2.2597 9.24213 2.24991 9.31157 2.25 9.38135V10.8813C2.25 11.4635 2.38554 12.0377 2.6459 12.5584C2.90625 13.0791 3.28427 13.532 3.75 13.8813V19.8813C3.75 20.2792 3.90804 20.6607 4.18934 20.942C4.47064 21.2233 4.85218 21.3813 5.25 21.3813H18.75C19.1478 21.3813 19.5294 21.2233 19.8107 20.942C20.092 20.6607 20.25 20.2792 20.25 19.8813V13.8813C20.7157 13.532 21.0937 13.0791 21.3541 12.5584C21.6145 12.0377 21.75 11.4635 21.75 10.8813V9.38135ZM5.0625 4.88135H18.9375L20.0081 8.63135H3.99469L5.0625 4.88135ZM9.75 10.1313H14.25V10.8813C14.25 11.4781 14.0129 12.0504 13.591 12.4723C13.169 12.8943 12.5967 13.1313 12 13.1313C11.4033 13.1313 10.831 12.8943 10.409 12.4723C9.98705 12.0504 9.75 11.4781 9.75 10.8813V10.1313ZM8.25 10.1313V10.8813C8.25 11.4781 8.01295 12.0504 7.59099 12.4723C7.16903 12.8943 6.59674 13.1313 6 13.1313C5.40326 13.1313 4.83097 12.8943 4.40901 12.4723C3.98705 12.0504 3.75 11.4781 3.75 10.8813V10.1313H8.25ZM18.75 19.8813H5.25V14.5563C5.4969 14.6061 5.74813 14.6312 6 14.6313C6.58217 14.6313 7.15634 14.4958 7.67705 14.2354C8.19776 13.9751 8.6507 13.5971 9 13.1313C9.3493 13.5971 9.80224 13.9751 10.323 14.2354C10.8437 14.4958 11.4178 14.6313 12 14.6313C12.5822 14.6313 13.1563 14.4958 13.6771 14.2354C14.1978 13.9751 14.6507 13.5971 15 13.1313C15.3493 13.5971 15.8022 13.9751 16.3229 14.2354C16.8437 14.4958 17.4178 14.6313 18 14.6313C18.2519 14.6312 18.5031 14.6061 18.75 14.5563V19.8813ZM18 13.1313C17.4033 13.1313 16.831 12.8943 16.409 12.4723C15.9871 12.0504 15.75 11.4781 15.75 10.8813V10.1313H20.25V10.8813C20.25 11.4781 20.0129 12.0504 19.591 12.4723C19.169 12.8943 18.5967 13.1313 18 13.1313Z" fill="#1A1E1E" />
-                                        </svg>
-                                        <span>Магазины</span>
-                                    </a>
-                                </div>
-
-
-                                <div class="filter-group">
-                                    <div class="subtitle">
-                                        Города и регионы
-                                    </div>
-                                    <div class="filter-checks">
-                                        <div class="m-check">
-                                            <input type="checkbox">
-                                            <label><span>Все</span></label>
-                                        </div>
-
-                                        <div class="m-check">
-                                            <input type="checkbox">
-                                            <label><span>Новосибирск</span></label>
-                                        </div>
-
-                                        <div class="m-check">
-                                            <input type="checkbox">
-                                            <label><span>Казань</span></label>
-                                        </div>
-
-                                        <div class="m-check">
-                                            <input type="checkbox">
-                                            <label><span>Москва</span></label>
-                                        </div>
-
-                                        <div class="m-check">
-                                            <input type="checkbox">
-                                            <label><span>Санкт-Петербург</span></label>
-                                        </div>
-
-                                        <div class="m-check">
-                                            <input type="checkbox">
-                                            <label><span>Санкт-Петербург</span></label>
-                                        </div>
-
-                                        <div class="m-check">
-                                            <input type="checkbox">
-                                            <label><span>Санкт-Петербург</span></label>
-                                        </div>
-
-
-                                        <button class="filter-checks__more">
-                                            <span class="_view1">Показать все</span>
-                                            <span class="_view2">Свернуть</span>
-                                            <svg class="_view2" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M3.96993 15.9697L11.4699 8.46972C11.5396 8.39999 11.6223 8.34467 11.7134 8.30693C11.8044 8.26918 11.902 8.24976 12.0006 8.24976C12.0991 8.24976 12.1967 8.26918 12.2878 8.30693C12.3788 8.34467 12.4615 8.39999 12.5312 8.46972L20.0312 15.9697C20.1719 16.1105 20.251 16.3013 20.251 16.5003C20.251 16.6994 20.1719 16.8902 20.0312 17.031C19.8905 17.1717 19.6996 17.2508 19.5006 17.2508C19.3015 17.2508 19.1107 17.1717 18.9699 17.031L12.0006 10.0607L5.03118 17.031C4.9615 17.1007 4.87878 17.1559 4.78773 17.1936C4.69669 17.2314 4.5991 17.2508 4.50056 17.2508C4.40201 17.2508 4.30443 17.2314 4.21339 17.1936C4.12234 17.1559 4.03962 17.1007 3.96993 17.031C3.90025 16.9613 3.84498 16.8786 3.80726 16.7875C3.76955 16.6965 3.75014 16.5989 3.75014 16.5003C3.75014 16.4018 3.76955 16.3042 3.80726 16.2132C3.84498 16.1221 3.90025 16.0394 3.96993 15.9697Z" fill="#008E7D" />
-                                            </svg>
-                                        </button>
-
-                                    </div>
-                                </div>
-
-                                <div class="filter-group">
-                                    <div class="subtitle">
-                                        Категории товаров
-                                    </div>
-                                    <div class="filter-checks">
-                                        <div class="m-check">
-                                            <input type="checkbox">
-                                            <label><span>Все</span></label>
-                                        </div>
-
-                                        <div class="m-check">
-                                            <input type="checkbox">
-                                            <label><span>Гробы</span></label>
-                                        </div>
-
-                                        <div class="m-check">
-                                            <input type="checkbox">
-                                            <label><span>Кресты</span></label>
-                                        </div>
-
-                                        <div class="m-check">
-                                            <input type="checkbox">
-                                            <label><span>Урны для праха</span></label>
-                                        </div>
-
-                                        <div class="m-check">
-                                            <input type="checkbox">
-                                            <label><span>Ритуальные принадлежности</span></label>
-                                        </div>
-
-                                        <div class="m-check">
-                                            <input type="checkbox">
-                                            <label><span>Ритуальные принадлежности</span></label>
-                                        </div>
-
-                                        <div class="m-check">
-                                            <input type="checkbox">
-                                            <label><span>Ритуальные принадлежности</span></label>
-                                        </div>
-
-
-                                        <button class="filter-checks__more">
-                                            <span class="_view1">Показать все</span>
-                                            <span class="_view2">Свернуть</span>
-                                            <svg class="_view2" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M3.96993 15.9697L11.4699 8.46972C11.5396 8.39999 11.6223 8.34467 11.7134 8.30693C11.8044 8.26918 11.902 8.24976 12.0006 8.24976C12.0991 8.24976 12.1967 8.26918 12.2878 8.30693C12.3788 8.34467 12.4615 8.39999 12.5312 8.46972L20.0312 15.9697C20.1719 16.1105 20.251 16.3013 20.251 16.5003C20.251 16.6994 20.1719 16.8902 20.0312 17.031C19.8905 17.1717 19.6996 17.2508 19.5006 17.2508C19.3015 17.2508 19.1107 17.1717 18.9699 17.031L12.0006 10.0607L5.03118 17.031C4.9615 17.1007 4.87878 17.1559 4.78773 17.1936C4.69669 17.2314 4.5991 17.2508 4.50056 17.2508C4.40201 17.2508 4.30443 17.2314 4.21339 17.1936C4.12234 17.1559 4.03962 17.1007 3.96993 17.031C3.90025 16.9613 3.84498 16.8786 3.80726 16.7875C3.76955 16.6965 3.75014 16.5989 3.75014 16.5003C3.75014 16.4018 3.76955 16.3042 3.80726 16.2132C3.84498 16.1221 3.90025 16.0394 3.96993 15.9697Z" fill="#008E7D" />
-                                            </svg>
-                                        </button>
-
-                                    </div>
-                                </div>
-                            </div>
+                    <div class="page-top__wrap">
+                        <h1 class="h1">
+                            Корзина
+                        </h1>
+                        <div class="page-top__desc text-gray4">
+                            <span class="text14">0 товаров</span>
                         </div>
-                        <div class="shops__col2">
-                            <div class="page-top__wrap">
-                                <h1 class="h1">
-                                    Избранное
-                                </h1>
-                                <div class="page-top__desc text-gray4">
-                                    <span class="text14">6 магазинов</span>
-                                </div>
-                            </div>
-                            <div class="shops__top grid3">
-                                <div class="sort sort--small">
-                                    <div class="sort__show">
-                                        <div class="sort__current"></div>
-                                    </div>
-                                    <div class="sort__hidden">
-                                        <div class="sort__top">
-                                            <div class="sort__title">
-                                                Сортировка
-                                            </div>
-                                        </div>
-                                        <div class="sort__items">
-                                            <div class="sort__item _active">
-                                                <span>Популярные</span>
-                                            </div>
-                                            <div class="sort__item">
-                                                <span>Новинки</span>
-                                            </div>
-                                            <div class="sort__item">
-                                                <span>Сначала недорогие</span>
-                                            </div>
-                                            <div class="sort__item">
-                                                <span>Сначала дорогие</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </div>
-                            <div class="shops-items grid3">
-                                <div class="shop-card">
-                                    <div class="shop-card__inner">
-                                        <div class="shop-card__top">
-                                            <a href="" class="shop-card__img">
-                                                <img src="img/shop.webp" alt="">
-                                            </a>
-                                            <button class="favourite-btn _added">
-                                                <svg width="29" height="28" viewBox="0 0 29 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M8.65039 5.18896H20.9119V22.9944L14.7811 19.3118L8.65039 22.9944V5.18896Z" fill="white" />
-                                                    <path d="M20.875 3.5H8.625C8.16087 3.5 7.71575 3.68437 7.38756 4.01256C7.05937 4.34075 6.875 4.78587 6.875 5.25V24.5C6.87508 24.6562 6.91694 24.8094 6.99625 24.944C7.07556 25.0785 7.18942 25.1893 7.32602 25.265C7.46262 25.3406 7.61698 25.3784 7.77308 25.3743C7.92918 25.3701 8.08133 25.3243 8.21375 25.2416L14.75 21.1564L21.2873 25.2416C21.4197 25.324 21.5718 25.3696 21.7277 25.3736C21.8837 25.3776 22.0378 25.3398 22.1742 25.2642C22.3107 25.1885 22.4244 25.0778 22.5037 24.9434C22.5829 24.8091 22.6248 24.656 22.625 24.5V5.25C22.625 4.78587 22.4406 4.34075 22.1124 4.01256C21.7842 3.68437 21.3391 3.5 20.875 3.5ZM20.875 22.9217L15.2127 19.3834C15.0736 19.2965 14.9129 19.2504 14.7489 19.2504C14.5849 19.2504 14.4242 19.2965 14.2852 19.3834L8.625 22.9217V5.25H20.875V22.9217Z" fill="black" />
-                                                </svg>
-                                            </button>
-                                        </div>
-                                        <div class="shop-card__content">
-                                            <div class="subtitle">
-                                                <a href="">Незабудка</a>
-                                            </div>
-                                            <div class="shop-card__city _flex text-gray6">
-                                                <img src="img/marker.svg" alt="">
-                                                <span class="text16">Санкт-Петербург</span>
-                                            </div>
-                                            <div class="shop-card__tags">
-                                                <a href="" class="m-tag"><span>Венки</span></a>
-                                                <a href="" class="m-tag"><span>Искусственные цветы</span></a>
-                                                <a href="" class="m-tag"><span>+ 2</span></a>
-                                            </div>
-                                        </div>
-                                        <div class="shop-card__bottom">
-                                            <a href="" class="shop-card__btn m-btn m-btn--medium m-btn-black">
-                                                <span>Перейти к товарам (20)</span>
-                                            </a>
-                                            <a href="" class="shop-card__btn m-btn m-btn--medium m-btn-gray-outline">
-                                                <span>Подписаться</span>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="shop-card">
-                                    <div class="shop-card__inner">
-                                        <div class="shop-card__top">
-                                            <a href="" class="shop-card__img">
-                                                <img src="img/shop2.webp" alt="">
-                                            </a>
-                                            <button class="favourite-btn _added">
-                                                <svg width="29" height="28" viewBox="0 0 29 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M8.65039 5.18896H20.9119V22.9944L14.7811 19.3118L8.65039 22.9944V5.18896Z" fill="white" />
-                                                    <path d="M20.875 3.5H8.625C8.16087 3.5 7.71575 3.68437 7.38756 4.01256C7.05937 4.34075 6.875 4.78587 6.875 5.25V24.5C6.87508 24.6562 6.91694 24.8094 6.99625 24.944C7.07556 25.0785 7.18942 25.1893 7.32602 25.265C7.46262 25.3406 7.61698 25.3784 7.77308 25.3743C7.92918 25.3701 8.08133 25.3243 8.21375 25.2416L14.75 21.1564L21.2873 25.2416C21.4197 25.324 21.5718 25.3696 21.7277 25.3736C21.8837 25.3776 22.0378 25.3398 22.1742 25.2642C22.3107 25.1885 22.4244 25.0778 22.5037 24.9434C22.5829 24.8091 22.6248 24.656 22.625 24.5V5.25C22.625 4.78587 22.4406 4.34075 22.1124 4.01256C21.7842 3.68437 21.3391 3.5 20.875 3.5ZM20.875 22.9217L15.2127 19.3834C15.0736 19.2965 14.9129 19.2504 14.7489 19.2504C14.5849 19.2504 14.4242 19.2965 14.2852 19.3834L8.625 22.9217V5.25H20.875V22.9217Z" fill="black" />
-                                                </svg>
-                                            </button>
-                                        </div>
-                                        <div class="shop-card__content">
-                                            <div class="subtitle">
-                                                <a href="">Вечность</a>
-                                            </div>
-                                            <div class="shop-card__city _flex text-gray6">
-                                                <img src="img/marker.svg" alt="">
-                                                <span class="text16">Москва</span>
-                                            </div>
-                                            <div class="shop-card__tags">
-                                                <a href="" class="m-tag"><span>Производитель </span></a>
-                                                <a href="" class="m-tag"><span>Мебель</span></a>
-                                                <a href="" class="m-tag"><span>Фурнитура</span></a>
-                                            </div>
-                                        </div>
-                                        <div class="shop-card__bottom">
-                                            <a href="" class="shop-card__btn m-btn m-btn--medium m-btn-black">
-                                                <span>Перейти к товарам (20)</span>
-                                            </a>
-                                            <a href="" class="shop-card__btn m-btn m-btn--medium m-btn-gray-outline">
-                                                <span>Подписаться</span>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="shop-card">
-                                    <div class="shop-card__inner">
-                                        <div class="shop-card__top">
-                                            <a href="" class="shop-card__img">
-                                                <img src="img/shop3.webp" alt="">
-                                            </a>
-                                            <button class="favourite-btn _added">
-                                                <svg width="29" height="28" viewBox="0 0 29 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M8.65039 5.18896H20.9119V22.9944L14.7811 19.3118L8.65039 22.9944V5.18896Z" fill="white" />
-                                                    <path d="M20.875 3.5H8.625C8.16087 3.5 7.71575 3.68437 7.38756 4.01256C7.05937 4.34075 6.875 4.78587 6.875 5.25V24.5C6.87508 24.6562 6.91694 24.8094 6.99625 24.944C7.07556 25.0785 7.18942 25.1893 7.32602 25.265C7.46262 25.3406 7.61698 25.3784 7.77308 25.3743C7.92918 25.3701 8.08133 25.3243 8.21375 25.2416L14.75 21.1564L21.2873 25.2416C21.4197 25.324 21.5718 25.3696 21.7277 25.3736C21.8837 25.3776 22.0378 25.3398 22.1742 25.2642C22.3107 25.1885 22.4244 25.0778 22.5037 24.9434C22.5829 24.8091 22.6248 24.656 22.625 24.5V5.25C22.625 4.78587 22.4406 4.34075 22.1124 4.01256C21.7842 3.68437 21.3391 3.5 20.875 3.5ZM20.875 22.9217L15.2127 19.3834C15.0736 19.2965 14.9129 19.2504 14.7489 19.2504C14.5849 19.2504 14.4242 19.2965 14.2852 19.3834L8.625 22.9217V5.25H20.875V22.9217Z" fill="black" />
-                                                </svg>
-                                            </button>
-                                        </div>
-                                        <div class="shop-card__content">
-                                            <div class="subtitle">
-                                                <a href="">Млечный путь</a>
-                                            </div>
-                                            <div class="shop-card__city _flex text-gray6">
-                                                <img src="img/marker.svg" alt="">
-                                                <span class="text16">Новосибирск</span>
-                                            </div>
-                                            <div class="shop-card__tags">
-                                                <a href="" class="m-tag"><span>Ковка</span></a>
-                                                <a href="" class="m-tag"><span>Таблички</span></a>
-                                                <a href="" class="m-tag"><span>Изделия из метала</span></a>
-                                            </div>
-                                        </div>
-                                        <div class="shop-card__bottom">
-                                            <a href="" class="shop-card__btn m-btn m-btn--medium m-btn-black">
-                                                <span>Перейти к товарам (20)</span>
-                                            </a>
-                                            <a href="" class="shop-card__btn m-btn m-btn--medium m-btn-gray-outline">
-                                                <span>Подписаться</span>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="shop-card">
-                                    <div class="shop-card__inner">
-                                        <div class="shop-card__top">
-                                            <a href="" class="shop-card__img">
-                                                <img src="img/shop4.webp" alt="">
-                                            </a>
-                                            <button class="favourite-btn _added">
-                                                <svg width="29" height="28" viewBox="0 0 29 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M8.65039 5.18896H20.9119V22.9944L14.7811 19.3118L8.65039 22.9944V5.18896Z" fill="white" />
-                                                    <path d="M20.875 3.5H8.625C8.16087 3.5 7.71575 3.68437 7.38756 4.01256C7.05937 4.34075 6.875 4.78587 6.875 5.25V24.5C6.87508 24.6562 6.91694 24.8094 6.99625 24.944C7.07556 25.0785 7.18942 25.1893 7.32602 25.265C7.46262 25.3406 7.61698 25.3784 7.77308 25.3743C7.92918 25.3701 8.08133 25.3243 8.21375 25.2416L14.75 21.1564L21.2873 25.2416C21.4197 25.324 21.5718 25.3696 21.7277 25.3736C21.8837 25.3776 22.0378 25.3398 22.1742 25.2642C22.3107 25.1885 22.4244 25.0778 22.5037 24.9434C22.5829 24.8091 22.6248 24.656 22.625 24.5V5.25C22.625 4.78587 22.4406 4.34075 22.1124 4.01256C21.7842 3.68437 21.3391 3.5 20.875 3.5ZM20.875 22.9217L15.2127 19.3834C15.0736 19.2965 14.9129 19.2504 14.7489 19.2504C14.5849 19.2504 14.4242 19.2965 14.2852 19.3834L8.625 22.9217V5.25H20.875V22.9217Z" fill="black" />
-                                                </svg>
-                                            </button>
-                                        </div>
-                                        <div class="shop-card__content">
-                                            <div class="subtitle">
-                                                <a href="">Мемориал</a>
-                                            </div>
-                                            <div class="shop-card__city _flex text-gray6">
-                                                <img src="img/marker.svg" alt="">
-                                                <span class="text16">Казань</span>
-                                            </div>
-                                            <div class="shop-card__tags">
-                                                <a href="" class="m-tag"><span>Памятники</span></a>
-                                                <a href="" class="m-tag"><span>Скульптуры</span></a>
-                                                <a href="" class="m-tag"><span>Мрамор</span></a>
-                                            </div>
-                                        </div>
-                                        <div class="shop-card__bottom">
-                                            <a href="" class="shop-card__btn m-btn m-btn--medium m-btn-black">
-                                                <span>Перейти к товарам (20)</span>
-                                            </a>
-                                            <a href="" class="shop-card__btn m-btn m-btn--medium m-btn-gray-outline">
-                                                <span>Подписаться</span>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="shop-card">
-                                    <div class="shop-card__inner">
-                                        <div class="shop-card__top">
-                                            <a href="" class="shop-card__img">
-                                                <img src="img/shop.webp" alt="">
-                                            </a>
-                                            <button class="favourite-btn _added">
-                                                <svg width="29" height="28" viewBox="0 0 29 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M8.65039 5.18896H20.9119V22.9944L14.7811 19.3118L8.65039 22.9944V5.18896Z" fill="white" />
-                                                    <path d="M20.875 3.5H8.625C8.16087 3.5 7.71575 3.68437 7.38756 4.01256C7.05937 4.34075 6.875 4.78587 6.875 5.25V24.5C6.87508 24.6562 6.91694 24.8094 6.99625 24.944C7.07556 25.0785 7.18942 25.1893 7.32602 25.265C7.46262 25.3406 7.61698 25.3784 7.77308 25.3743C7.92918 25.3701 8.08133 25.3243 8.21375 25.2416L14.75 21.1564L21.2873 25.2416C21.4197 25.324 21.5718 25.3696 21.7277 25.3736C21.8837 25.3776 22.0378 25.3398 22.1742 25.2642C22.3107 25.1885 22.4244 25.0778 22.5037 24.9434C22.5829 24.8091 22.6248 24.656 22.625 24.5V5.25C22.625 4.78587 22.4406 4.34075 22.1124 4.01256C21.7842 3.68437 21.3391 3.5 20.875 3.5ZM20.875 22.9217L15.2127 19.3834C15.0736 19.2965 14.9129 19.2504 14.7489 19.2504C14.5849 19.2504 14.4242 19.2965 14.2852 19.3834L8.625 22.9217V5.25H20.875V22.9217Z" fill="black" />
-                                                </svg>
-                                            </button>
-                                        </div>
-                                        <div class="shop-card__content">
-                                            <div class="subtitle">
-                                                <a href="">Незабудка</a>
-                                            </div>
-                                            <div class="shop-card__city _flex text-gray6">
-                                                <img src="img/marker.svg" alt="">
-                                                <span class="text16">Санкт-Петербург</span>
-                                            </div>
-                                            <div class="shop-card__tags">
-                                                <a href="" class="m-tag"><span>Венки</span></a>
-                                                <a href="" class="m-tag"><span>Искусственные цветы</span></a>
-                                                <a href="" class="m-tag"><span>+ 2</span></a>
-                                            </div>
-                                        </div>
-                                        <div class="shop-card__bottom">
-                                            <a href="" class="shop-card__btn m-btn m-btn--medium m-btn-black">
-                                                <span>Перейти к товарам (20)</span>
-                                            </a>
-                                            <a href="" class="shop-card__btn m-btn m-btn--medium m-btn-gray-outline">
-                                                <span>Подписаться</span>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="shop-card">
-                                    <div class="shop-card__inner">
-                                        <div class="shop-card__top">
-                                            <a href="" class="shop-card__img">
-                                                <img src="img/shop2.webp" alt="">
-                                            </a>
-                                            <button class="favourite-btn _added">
-                                                <svg width="29" height="28" viewBox="0 0 29 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M8.65039 5.18896H20.9119V22.9944L14.7811 19.3118L8.65039 22.9944V5.18896Z" fill="white" />
-                                                    <path d="M20.875 3.5H8.625C8.16087 3.5 7.71575 3.68437 7.38756 4.01256C7.05937 4.34075 6.875 4.78587 6.875 5.25V24.5C6.87508 24.6562 6.91694 24.8094 6.99625 24.944C7.07556 25.0785 7.18942 25.1893 7.32602 25.265C7.46262 25.3406 7.61698 25.3784 7.77308 25.3743C7.92918 25.3701 8.08133 25.3243 8.21375 25.2416L14.75 21.1564L21.2873 25.2416C21.4197 25.324 21.5718 25.3696 21.7277 25.3736C21.8837 25.3776 22.0378 25.3398 22.1742 25.2642C22.3107 25.1885 22.4244 25.0778 22.5037 24.9434C22.5829 24.8091 22.6248 24.656 22.625 24.5V5.25C22.625 4.78587 22.4406 4.34075 22.1124 4.01256C21.7842 3.68437 21.3391 3.5 20.875 3.5ZM20.875 22.9217L15.2127 19.3834C15.0736 19.2965 14.9129 19.2504 14.7489 19.2504C14.5849 19.2504 14.4242 19.2965 14.2852 19.3834L8.625 22.9217V5.25H20.875V22.9217Z" fill="black" />
-                                                </svg>
-                                            </button>
-                                        </div>
-                                        <div class="shop-card__content">
-                                            <div class="subtitle">
-                                                <a href="">Вечность</a>
-                                            </div>
-                                            <div class="shop-card__city _flex text-gray6">
-                                                <img src="img/marker.svg" alt="">
-                                                <span class="text16">Москва</span>
-                                            </div>
-                                            <div class="shop-card__tags">
-                                                <a href="" class="m-tag"><span>Производитель </span></a>
-                                                <a href="" class="m-tag"><span>Мебель</span></a>
-                                                <a href="" class="m-tag"><span>Фурнитура</span></a>
-                                            </div>
-                                        </div>
-                                        <div class="shop-card__bottom">
-                                            <a href="" class="shop-card__btn m-btn m-btn--medium m-btn-black">
-                                                <span>Перейти к товарам (20)</span>
-                                            </a>
-                                            <a href="" class="shop-card__btn m-btn m-btn--medium m-btn-gray-outline">
-                                                <span>Подписаться</span>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </div>
+                    </div>
+                    <div class="cart-empty">
+                        <img src="img/cart-empty.svg" alt="" class="cart-empty__img">
+                        <div class="subtitle">
+                            Корзина пуста
+                        </div>
+                        <div class="cart-empty__hint _flex">
+                            <span class="text14 text-gray5">
+                                Воспользуйтесь поиском, чтобы найти всё, что нужно
+                            </span>
+                            <img src="img/search3.svg" alt="">
                         </div>
                     </div>
                 </div>
+            </div>
+
+            <div class="products products--cart">
+                <div class="container">
+                    <div class="h2">
+                        Вы смотрели
+                    </div>
+                    <div class="products__grid grid6">
+                        <div class="product-card">
+                            <div class="product-card__inner">
+                                <div class="product-card__top">
+                                    <a href="" class="product-card__img">
+                                        <img src="img/product.webp" alt="">
+                                    </a>
+
+
+                                    <div class="m-badge">
+                                        <img src="img/Fire.svg" alt="">
+                                        <span>Распродажа</span>
+                                    </div>
+
+
+
+
+                                    <button class="favourite-btn ">
+                                        <svg width="29" height="28" viewBox="0 0 29 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M8.65039 5.18896H20.9119V22.9944L14.7811 19.3118L8.65039 22.9944V5.18896Z" fill="white" />
+                                            <path d="M20.875 3.5H8.625C8.16087 3.5 7.71575 3.68437 7.38756 4.01256C7.05937 4.34075 6.875 4.78587 6.875 5.25V24.5C6.87508 24.6562 6.91694 24.8094 6.99625 24.944C7.07556 25.0785 7.18942 25.1893 7.32602 25.265C7.46262 25.3406 7.61698 25.3784 7.77308 25.3743C7.92918 25.3701 8.08133 25.3243 8.21375 25.2416L14.75 21.1564L21.2873 25.2416C21.4197 25.324 21.5718 25.3696 21.7277 25.3736C21.8837 25.3776 22.0378 25.3398 22.1742 25.2642C22.3107 25.1885 22.4244 25.0778 22.5037 24.9434C22.5829 24.8091 22.6248 24.656 22.625 24.5V5.25C22.625 4.78587 22.4406 4.34075 22.1124 4.01256C21.7842 3.68437 21.3391 3.5 20.875 3.5ZM20.875 22.9217L15.2127 19.3834C15.0736 19.2965 14.9129 19.2504 14.7489 19.2504C14.5849 19.2504 14.4242 19.2965 14.2852 19.3834L8.625 22.9217V5.25H20.875V22.9217Z" fill="black" />
+                                        </svg>
+                                    </button>
+                                </div>
+                                <div class="product-card__content">
+                                    <div class="product-card__prices">
+                                        <div class="product-card__price">
+                                            15 999 ₽
+                                        </div>
+                                        <div class="product-card__price2">
+                                            20 000 ₽
+                                        </div>
+                                    </div>
+                                    <div class="product-card__title">
+                                        <a href="">Название товара максимум в две строки</a>
+                                    </div>
+                                    <div class="product-card__colors">
+                                        <div class="color-item" style="background: #000; border: .5px solid rgb(26, 30, 30)"></div>
+                                        <div class="color-item" style="background: #fff; border: .5px solid rgba(26, 30, 30, 0.3)"></div>
+                                        <div class="color-item" style="background: rgb(177, 177, 177); border: .5px solid rgba(26, 30, 30, 0.3)"></div>
+                                        <div class="color-item" style="background: rgb(237, 226, 205); border: .5px solid rgba(26, 30, 30, 0.3)"></div>
+                                        <div class="color-item" style="background: rgb(178, 80, 0); border: .5px solid rgba(26, 30, 30, 0.3)"></div>
+                                        <div class="text12 font2">
+                                            + 2
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product-card__bottom">
+                                    <div class="cart-btn m-btn m-btn-black">
+                                        <div class="cart-btn__view _view1">
+                                            <span>Купить</span>
+                                        </div>
+                                        <div class="cart-btn__view _view2">
+                                            <img src="img/cart.svg" alt="">
+                                            <span>В корзину</span>
+                                        </div>
+                                        <div class="cart-btn__view _view3">
+                                            <img src="img/check.svg" alt="">
+                                            <span>В корзине</span>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="product-card">
+                            <div class="product-card__inner">
+                                <div class="product-card__top">
+                                    <a href="" class="product-card__img">
+                                        <img src="img/product2.webp" alt="">
+                                    </a>
+
+
+
+
+
+                                    <button class="favourite-btn ">
+                                        <svg width="29" height="28" viewBox="0 0 29 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M8.65039 5.18896H20.9119V22.9944L14.7811 19.3118L8.65039 22.9944V5.18896Z" fill="white" />
+                                            <path d="M20.875 3.5H8.625C8.16087 3.5 7.71575 3.68437 7.38756 4.01256C7.05937 4.34075 6.875 4.78587 6.875 5.25V24.5C6.87508 24.6562 6.91694 24.8094 6.99625 24.944C7.07556 25.0785 7.18942 25.1893 7.32602 25.265C7.46262 25.3406 7.61698 25.3784 7.77308 25.3743C7.92918 25.3701 8.08133 25.3243 8.21375 25.2416L14.75 21.1564L21.2873 25.2416C21.4197 25.324 21.5718 25.3696 21.7277 25.3736C21.8837 25.3776 22.0378 25.3398 22.1742 25.2642C22.3107 25.1885 22.4244 25.0778 22.5037 24.9434C22.5829 24.8091 22.6248 24.656 22.625 24.5V5.25C22.625 4.78587 22.4406 4.34075 22.1124 4.01256C21.7842 3.68437 21.3391 3.5 20.875 3.5ZM20.875 22.9217L15.2127 19.3834C15.0736 19.2965 14.9129 19.2504 14.7489 19.2504C14.5849 19.2504 14.4242 19.2965 14.2852 19.3834L8.625 22.9217V5.25H20.875V22.9217Z" fill="black" />
+                                        </svg>
+                                    </button>
+                                </div>
+                                <div class="product-card__content">
+                                    <div class="product-card__prices">
+                                        <div class="product-card__price">
+                                            15 999 ₽
+                                        </div>
+                                        <div class="product-card__price2">
+                                            20 000 ₽
+                                        </div>
+                                    </div>
+                                    <div class="product-card__title">
+                                        <a href="">Название товара максимум в две строки</a>
+                                    </div>
+                                    <div class="product-card__colors">
+                                        <div class="color-item" style="background: #000; border: .5px solid rgb(26, 30, 30)"></div>
+                                        <div class="color-item" style="background: #fff; border: .5px solid rgba(26, 30, 30, 0.3)"></div>
+                                        <div class="color-item" style="background: rgb(177, 177, 177); border: .5px solid rgba(26, 30, 30, 0.3)"></div>
+                                        <div class="color-item" style="background: rgb(237, 226, 205); border: .5px solid rgba(26, 30, 30, 0.3)"></div>
+                                        <div class="color-item" style="background: rgb(178, 80, 0); border: .5px solid rgba(26, 30, 30, 0.3)"></div>
+                                        <div class="text12 font2">
+                                            + 2
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product-card__bottom">
+                                    <div class="cart-btn m-btn m-btn-black">
+                                        <div class="cart-btn__view _view1">
+                                            <span>Купить</span>
+                                        </div>
+                                        <div class="cart-btn__view _view2">
+                                            <img src="img/cart.svg" alt="">
+                                            <span>В корзину</span>
+                                        </div>
+                                        <div class="cart-btn__view _view3">
+                                            <img src="img/check.svg" alt="">
+                                            <span>В корзине</span>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="product-card">
+                            <div class="product-card__inner">
+                                <div class="product-card__top">
+                                    <a href="" class="product-card__img">
+                                        <img src="img/product3.webp" alt="">
+                                    </a>
+
+
+
+
+
+                                    <button class="favourite-btn ">
+                                        <svg width="29" height="28" viewBox="0 0 29 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M8.65039 5.18896H20.9119V22.9944L14.7811 19.3118L8.65039 22.9944V5.18896Z" fill="white" />
+                                            <path d="M20.875 3.5H8.625C8.16087 3.5 7.71575 3.68437 7.38756 4.01256C7.05937 4.34075 6.875 4.78587 6.875 5.25V24.5C6.87508 24.6562 6.91694 24.8094 6.99625 24.944C7.07556 25.0785 7.18942 25.1893 7.32602 25.265C7.46262 25.3406 7.61698 25.3784 7.77308 25.3743C7.92918 25.3701 8.08133 25.3243 8.21375 25.2416L14.75 21.1564L21.2873 25.2416C21.4197 25.324 21.5718 25.3696 21.7277 25.3736C21.8837 25.3776 22.0378 25.3398 22.1742 25.2642C22.3107 25.1885 22.4244 25.0778 22.5037 24.9434C22.5829 24.8091 22.6248 24.656 22.625 24.5V5.25C22.625 4.78587 22.4406 4.34075 22.1124 4.01256C21.7842 3.68437 21.3391 3.5 20.875 3.5ZM20.875 22.9217L15.2127 19.3834C15.0736 19.2965 14.9129 19.2504 14.7489 19.2504C14.5849 19.2504 14.4242 19.2965 14.2852 19.3834L8.625 22.9217V5.25H20.875V22.9217Z" fill="black" />
+                                        </svg>
+                                    </button>
+                                </div>
+                                <div class="product-card__content">
+                                    <div class="product-card__prices">
+                                        <div class="product-card__price">
+                                            15 999 ₽
+                                        </div>
+                                        <div class="product-card__price2">
+                                            20 000 ₽
+                                        </div>
+                                    </div>
+                                    <div class="product-card__title">
+                                        <a href="">Название товара максимум в две строки</a>
+                                    </div>
+                                    <div class="product-card__colors">
+                                        <div class="color-item" style="background: #000; border: .5px solid rgb(26, 30, 30)"></div>
+                                        <div class="color-item" style="background: #fff; border: .5px solid rgba(26, 30, 30, 0.3)"></div>
+                                        <div class="color-item" style="background: rgb(177, 177, 177); border: .5px solid rgba(26, 30, 30, 0.3)"></div>
+                                        <div class="color-item" style="background: rgb(237, 226, 205); border: .5px solid rgba(26, 30, 30, 0.3)"></div>
+                                        <div class="color-item" style="background: rgb(178, 80, 0); border: .5px solid rgba(26, 30, 30, 0.3)"></div>
+                                        <div class="text12 font2">
+                                            + 2
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product-card__bottom">
+                                    <div class="cart-btn m-btn m-btn-black">
+                                        <div class="cart-btn__view _view1">
+                                            <span>Купить</span>
+                                        </div>
+                                        <div class="cart-btn__view _view2">
+                                            <img src="img/cart.svg" alt="">
+                                            <span>В корзину</span>
+                                        </div>
+                                        <div class="cart-btn__view _view3">
+                                            <img src="img/check.svg" alt="">
+                                            <span>В корзине</span>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="product-card">
+                            <div class="product-card__inner">
+                                <div class="product-card__top">
+                                    <a href="" class="product-card__img">
+                                        <img src="img/product4.webp" alt="">
+                                    </a>
+
+
+
+
+
+                                    <button class="favourite-btn _added">
+                                        <svg width="29" height="28" viewBox="0 0 29 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M8.65039 5.18896H20.9119V22.9944L14.7811 19.3118L8.65039 22.9944V5.18896Z" fill="white" />
+                                            <path d="M20.875 3.5H8.625C8.16087 3.5 7.71575 3.68437 7.38756 4.01256C7.05937 4.34075 6.875 4.78587 6.875 5.25V24.5C6.87508 24.6562 6.91694 24.8094 6.99625 24.944C7.07556 25.0785 7.18942 25.1893 7.32602 25.265C7.46262 25.3406 7.61698 25.3784 7.77308 25.3743C7.92918 25.3701 8.08133 25.3243 8.21375 25.2416L14.75 21.1564L21.2873 25.2416C21.4197 25.324 21.5718 25.3696 21.7277 25.3736C21.8837 25.3776 22.0378 25.3398 22.1742 25.2642C22.3107 25.1885 22.4244 25.0778 22.5037 24.9434C22.5829 24.8091 22.6248 24.656 22.625 24.5V5.25C22.625 4.78587 22.4406 4.34075 22.1124 4.01256C21.7842 3.68437 21.3391 3.5 20.875 3.5ZM20.875 22.9217L15.2127 19.3834C15.0736 19.2965 14.9129 19.2504 14.7489 19.2504C14.5849 19.2504 14.4242 19.2965 14.2852 19.3834L8.625 22.9217V5.25H20.875V22.9217Z" fill="black" />
+                                        </svg>
+                                    </button>
+                                </div>
+                                <div class="product-card__content">
+                                    <div class="product-card__prices">
+                                        <div class="product-card__price">
+                                            15 999 ₽
+                                        </div>
+                                        <div class="product-card__price2">
+                                            20 000 ₽
+                                        </div>
+                                    </div>
+                                    <div class="product-card__title">
+                                        <a href="">Название товара максимум в две строки</a>
+                                    </div>
+                                    <div class="product-card__colors">
+                                        <div class="color-item" style="background: #000; border: .5px solid rgb(26, 30, 30)"></div>
+                                        <div class="color-item" style="background: #fff; border: .5px solid rgba(26, 30, 30, 0.3)"></div>
+                                        <div class="color-item" style="background: rgb(177, 177, 177); border: .5px solid rgba(26, 30, 30, 0.3)"></div>
+                                        <div class="color-item" style="background: rgb(237, 226, 205); border: .5px solid rgba(26, 30, 30, 0.3)"></div>
+                                        <div class="color-item" style="background: rgb(178, 80, 0); border: .5px solid rgba(26, 30, 30, 0.3)"></div>
+                                        <div class="text12 font2">
+                                            + 2
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product-card__bottom">
+                                    <div class="cart-btn m-btn m-btn-black">
+                                        <div class="cart-btn__view _view1">
+                                            <span>Купить</span>
+                                        </div>
+                                        <div class="cart-btn__view _view2">
+                                            <img src="img/cart.svg" alt="">
+                                            <span>В корзину</span>
+                                        </div>
+                                        <div class="cart-btn__view _view3">
+                                            <img src="img/check.svg" alt="">
+                                            <span>В корзине</span>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="product-card">
+                            <div class="product-card__inner">
+                                <div class="product-card__top">
+                                    <a href="" class="product-card__img">
+                                        <img src="img/product5.webp" alt="">
+                                    </a>
+
+
+
+
+                                    <div class="m-badge m-badge--green">
+                                        <img src="img/PiggyBank.svg" alt="">
+                                        <span>Выгодная цена</span>
+                                    </div>
+
+
+                                    <button class="favourite-btn ">
+                                        <svg width="29" height="28" viewBox="0 0 29 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M8.65039 5.18896H20.9119V22.9944L14.7811 19.3118L8.65039 22.9944V5.18896Z" fill="white" />
+                                            <path d="M20.875 3.5H8.625C8.16087 3.5 7.71575 3.68437 7.38756 4.01256C7.05937 4.34075 6.875 4.78587 6.875 5.25V24.5C6.87508 24.6562 6.91694 24.8094 6.99625 24.944C7.07556 25.0785 7.18942 25.1893 7.32602 25.265C7.46262 25.3406 7.61698 25.3784 7.77308 25.3743C7.92918 25.3701 8.08133 25.3243 8.21375 25.2416L14.75 21.1564L21.2873 25.2416C21.4197 25.324 21.5718 25.3696 21.7277 25.3736C21.8837 25.3776 22.0378 25.3398 22.1742 25.2642C22.3107 25.1885 22.4244 25.0778 22.5037 24.9434C22.5829 24.8091 22.6248 24.656 22.625 24.5V5.25C22.625 4.78587 22.4406 4.34075 22.1124 4.01256C21.7842 3.68437 21.3391 3.5 20.875 3.5ZM20.875 22.9217L15.2127 19.3834C15.0736 19.2965 14.9129 19.2504 14.7489 19.2504C14.5849 19.2504 14.4242 19.2965 14.2852 19.3834L8.625 22.9217V5.25H20.875V22.9217Z" fill="black" />
+                                        </svg>
+                                    </button>
+                                </div>
+                                <div class="product-card__content">
+                                    <div class="product-card__prices">
+                                        <div class="product-card__price">
+                                            15 999 ₽
+                                        </div>
+                                        <div class="product-card__price2">
+                                            20 000 ₽
+                                        </div>
+                                    </div>
+                                    <div class="product-card__title">
+                                        <a href="">Название товара максимум в две строки</a>
+                                    </div>
+                                    <div class="product-card__colors">
+                                        <div class="color-item" style="background: #000; border: .5px solid rgb(26, 30, 30)"></div>
+                                        <div class="color-item" style="background: #fff; border: .5px solid rgba(26, 30, 30, 0.3)"></div>
+                                        <div class="color-item" style="background: rgb(177, 177, 177); border: .5px solid rgba(26, 30, 30, 0.3)"></div>
+                                        <div class="color-item" style="background: rgb(237, 226, 205); border: .5px solid rgba(26, 30, 30, 0.3)"></div>
+                                        <div class="color-item" style="background: rgb(178, 80, 0); border: .5px solid rgba(26, 30, 30, 0.3)"></div>
+                                        <div class="text12 font2">
+                                            + 2
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product-card__bottom">
+                                    <div class="cart-btn m-btn m-btn-black">
+                                        <div class="cart-btn__view _view1">
+                                            <span>Купить</span>
+                                        </div>
+                                        <div class="cart-btn__view _view2">
+                                            <img src="img/cart.svg" alt="">
+                                            <span>В корзину</span>
+                                        </div>
+                                        <div class="cart-btn__view _view3">
+                                            <img src="img/check.svg" alt="">
+                                            <span>В корзине</span>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="product-card">
+                            <div class="product-card__inner">
+                                <div class="product-card__top">
+                                    <a href="" class="product-card__img">
+                                        <img src="img/product.webp" alt="">
+                                    </a>
+
+
+                                    <div class="m-badge">
+                                        <img src="img/Fire.svg" alt="">
+                                        <span>Распродажа</span>
+                                    </div>
+
+
+
+
+                                    <button class="favourite-btn ">
+                                        <svg width="29" height="28" viewBox="0 0 29 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M8.65039 5.18896H20.9119V22.9944L14.7811 19.3118L8.65039 22.9944V5.18896Z" fill="white" />
+                                            <path d="M20.875 3.5H8.625C8.16087 3.5 7.71575 3.68437 7.38756 4.01256C7.05937 4.34075 6.875 4.78587 6.875 5.25V24.5C6.87508 24.6562 6.91694 24.8094 6.99625 24.944C7.07556 25.0785 7.18942 25.1893 7.32602 25.265C7.46262 25.3406 7.61698 25.3784 7.77308 25.3743C7.92918 25.3701 8.08133 25.3243 8.21375 25.2416L14.75 21.1564L21.2873 25.2416C21.4197 25.324 21.5718 25.3696 21.7277 25.3736C21.8837 25.3776 22.0378 25.3398 22.1742 25.2642C22.3107 25.1885 22.4244 25.0778 22.5037 24.9434C22.5829 24.8091 22.6248 24.656 22.625 24.5V5.25C22.625 4.78587 22.4406 4.34075 22.1124 4.01256C21.7842 3.68437 21.3391 3.5 20.875 3.5ZM20.875 22.9217L15.2127 19.3834C15.0736 19.2965 14.9129 19.2504 14.7489 19.2504C14.5849 19.2504 14.4242 19.2965 14.2852 19.3834L8.625 22.9217V5.25H20.875V22.9217Z" fill="black" />
+                                        </svg>
+                                    </button>
+                                </div>
+                                <div class="product-card__content">
+                                    <div class="product-card__prices">
+                                        <div class="product-card__price">
+                                            15 999 ₽
+                                        </div>
+                                        <div class="product-card__price2">
+                                            20 000 ₽
+                                        </div>
+                                    </div>
+                                    <div class="product-card__title">
+                                        <a href="">Название товара максимум в две строки</a>
+                                    </div>
+                                    <div class="product-card__colors">
+                                        <div class="color-item" style="background: #000; border: .5px solid rgb(26, 30, 30)"></div>
+                                        <div class="color-item" style="background: #fff; border: .5px solid rgba(26, 30, 30, 0.3)"></div>
+                                        <div class="color-item" style="background: rgb(177, 177, 177); border: .5px solid rgba(26, 30, 30, 0.3)"></div>
+                                        <div class="color-item" style="background: rgb(237, 226, 205); border: .5px solid rgba(26, 30, 30, 0.3)"></div>
+                                        <div class="color-item" style="background: rgb(178, 80, 0); border: .5px solid rgba(26, 30, 30, 0.3)"></div>
+                                        <div class="text12 font2">
+                                            + 2
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product-card__bottom">
+                                    <div class="cart-btn m-btn m-btn-black">
+                                        <div class="cart-btn__view _view1">
+                                            <span>Купить</span>
+                                        </div>
+                                        <div class="cart-btn__view _view2">
+                                            <img src="img/cart.svg" alt="">
+                                            <span>В корзину</span>
+                                        </div>
+                                        <div class="cart-btn__view _view3">
+                                            <img src="img/check.svg" alt="">
+                                            <span>В корзине</span>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
             </div>
 
         </main>
